@@ -6,5 +6,44 @@
         background-color: transparent;
         line-height: 3;
     }
-    
+    &__icon{
+        color:#b3b3b3;
+        margin-left: .5rem;
+        font-size: 1.2rem;
+    }
+    &__icon-right{
+        color:#b3b3b3;
+        margin-right: .5rem;
+        font-size: 1.2rem;
+        text-align: right;
+    }
+
+}
+.menu-top{
+    position: fixed;
+    top: 2.5rem;
+    z-index: 10;
+    padding: 0.5rem;
+    right: 0;
+    width: 70%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0,.4);
+    text-align: left;
+    &__item{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 2;
+    }
+    &__link{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: .9rem;
+        color:  #b3b3b3;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: .3rem;
+        
+    }
 }

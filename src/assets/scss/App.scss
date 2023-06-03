@@ -9,3 +9,17 @@
 //Components
 
 @use './components/header';
+
+
+
+
+
+
+
+body{
+    font-size:63.5%;
+}
+.grid-2-small{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
