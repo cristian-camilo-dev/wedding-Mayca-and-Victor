@@ -9,6 +9,8 @@
 //Components
 
 @use './components/header';
+@use './components/main';
+@use './components/songs';
 
 
 
@@ -18,6 +20,7 @@
 
 body{
     font-size:63.5%;
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 .grid-2-small{
     display: grid;

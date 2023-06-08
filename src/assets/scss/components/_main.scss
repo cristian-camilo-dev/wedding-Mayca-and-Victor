@@ -1,0 +1,55 @@
+.scroll {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  
+  background-image: linear-gradient(
+    180deg,
+    rgba(19,165,176,255) 85%,
+    white 100%
+  );
+  
+  &__conten{
+    text-align: center;
+    padding: 0 1rem;
+  }
+  &__img-conten {
+    width: 100%;
+  }
+  &__img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+  }
+  &__title {
+    color: rgb(236, 236, 236);
+    font-size: 3.5rem;
+    font-family: "Rainbow Saturday", sans-serif;
+    margin: 5px;
+    font-weight: 300;
+    text-align: center;
+  }
+  &__description {
+    color: rgb(236, 236, 236);
+    font-size: .8rem;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__button {
+      background-color: rgb(236, 236, 236);;
+      text-decoration: none;
+      color:  rgba(19,165,176,255);
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 50px;
+      font-family: "Franklin Gothic Medium", sans-serif;
+      letter-spacing: 0.1rem;
+    }
+    
+  }
+  
+

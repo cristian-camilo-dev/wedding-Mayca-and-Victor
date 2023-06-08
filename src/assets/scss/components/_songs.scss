@@ -1,0 +1,86 @@
+.title_songs {
+  color: #ffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container_songs {
+  width: 100%;
+  .container_songs__icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    .container_songs__controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.music {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin-left: 5px;
+  margin-top: 25px;
+  .music__artista {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+
+    .music__img {
+      width: 50px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      display: block;
+      margin-right: 15px;
+      box-shadow: 0 0 10px #131313;
+    }
+
+    .music__play {
+      color: #ffff;
+      text-decoration: none;
+      .music__title {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0;
+      }
+      .music__artista {
+        font-size: 0.7rem;
+        font-weight: 300;
+        margin: 0;
+      }
+    }
+  }
+  .music__icon {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin: 0 10px;
+    cursor: pointer;
+    .icon_heart {
+      animation: heart 1s infinite;
+
+      @keyframes heart {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      :hover {
+        color: #f07a7a;
+      }
+    }
+  }
+}
