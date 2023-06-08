@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   &__menu {
@@ -44,7 +44,7 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-size: 0.9rem;
-    color: #fff;
+    color: #2b2a2a;
     display: flex;
     align-items: center;
     gap: 1rem;

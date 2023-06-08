@@ -1,28 +1,35 @@
-import { useState, useEffect } from "react";
+import {  useEffect , useRef, useContext } from "react";
 import ReactPropTypes from "prop-types";
+import  AudioPlayerContext  from '../Context/AudioPlayerContext';
 import { Icon } from "@iconify/react";
 
-const MusicItem = ({ id, imageSrc, title, artist, audioSrc }) => {
-  const [audio] = useState(new Audio(audioSrc));
-  const [isPlaying, setIsPlaying] = useState(false);
+
+const MusicItem = ({ id, imageSrc, title, artist, audioSrc, handleLike }) => {
+  const audioRef = useRef(new Audio(audioSrc));
+  const { activePlayer, setActivePlayer } = useContext(AudioPlayerContext);
 
   const togglePlayPause = () => {
-    setIsPlaying(!isPlaying);
+    if (activePlayer === id) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      setActivePlayer(null);
+    } else {
+      audioRef.current.play();
+      setActivePlayer(id);
+    }
   };
 
   useEffect(() => {
-    if (isPlaying) {
-      audio.play();
-    } else {
-      audio.pause();
+    if (activePlayer !== id && !audioRef.current.paused) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
     }
 
-    return () => {
-      audio.pause();
-      audio.currentTime = 0;
-    };
+   
 
-  }, [isPlaying, audio]);
+
+
+  }, [activePlayer, id]);
   return (
     <div className="grid-2-small">
       <div className="music__artista">
@@ -47,20 +54,23 @@ const MusicItem = ({ id, imageSrc, title, artist, audioSrc }) => {
           className="icon_heart"
           width={35}
           color="white"
+          onClick={handleLike}
         />
         <Icon icon="mdi:bookmark-music-outline" width={35} color="white" />
         <Icon icon="mdi:dots-horizontal" width={35} color="white" />
       </div>
+      
     </div>
   );
 };
 
 MusicItem.propTypes = {
-  id: ReactPropTypes.string.isRequired,
+  id: ReactPropTypes.number.isRequired,
   imageSrc: ReactPropTypes.string.isRequired,
   title: ReactPropTypes.string.isRequired,
   artist: ReactPropTypes.string.isRequired,
   audioSrc: ReactPropTypes.string.isRequired,
+  handleLike: ReactPropTypes.func.isRequired,
 };
 
 export default MusicItem;

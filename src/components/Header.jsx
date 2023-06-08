@@ -17,12 +17,12 @@ const Header = () => {
           <Icon icon="mdi:chevron-left" width={25} />
         </div>
         <div className="header__icon-right">
-          <Icon icon="mdi:cards-heart-outline" width={25} />
+          <Icon icon="mdi:cards-heart-outline" width={25} style={{ marginRight: "20px"  }} />
           <Icon
             onClick={handleViewMenu}
             icon="carbon:overflow-menu-vertical"
             width={25}
-            style={{ color: "black" }}
+            style={{ color: "black",position : "fixed" ,right : "0" ,top : "10px" }}
           />
         </div>
         { isMenuVisible   && (
