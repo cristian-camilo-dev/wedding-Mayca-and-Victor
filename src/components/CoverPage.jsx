@@ -1,8 +1,11 @@
+import boda1 from "../assets/img/boda1.jpeg";
+
+
 const CoverPage = () => {
   return (
     <>
       <div className="scroll__img-conten">
-        <img src="/src/assets/img/boda1.jpeg" alt="" className="scroll__img" />
+        <img src={boda1} alt="" className="scroll__img" />
       </div>
       <div className="scroll__conten">
         <h1 className="scroll__title">Mayca y Víctor</h1>
