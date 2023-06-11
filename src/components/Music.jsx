@@ -3,6 +3,7 @@ import MusicItem from "./MusicItem";
 import AudioPlayerContext from "../Context/AudioPlayerContext";
 import { songs } from "../data/dataMusic";
 import like from "../assets/img/like.gif";
+import confetti from "canvas-confetti";
 
 
 const Music = () => {
@@ -12,6 +13,11 @@ const Music = () => {
 
   const handleLike = () => {
     setLikes(likes + 1);
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
   };
 
   return (

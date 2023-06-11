@@ -78,6 +78,7 @@
           transform: scale(1);
         }
       }
+      
      
     }
   }
@@ -94,7 +95,7 @@
       object-fit: cover;
     }
     .like{
-      background-color: rgb(209, 117, 117);
+      background-color: rgb(255, 255, 255);
       border-radius: 50%;
       width: 50px;
       height: 50px;
@@ -105,7 +106,8 @@
       p{
         font-size: 1.5rem;
         font-weight: 500;
-        color: #ffff;}
+        color: #24707c;
+      }
         
         
     }

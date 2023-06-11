@@ -1,12 +1,15 @@
-import {  useEffect , useRef, useContext } from "react";
+import {  useEffect , useRef, useContext ,useState } from "react";
 import ReactPropTypes from "prop-types";
 import  AudioPlayerContext  from '../Context/AudioPlayerContext';
 import { Icon } from "@iconify/react";
 
 
+
+
 const MusicItem = ({ id, imageSrc, title, artist, audioSrc, handleLike }) => {
   const audioRef = useRef(new Audio(audioSrc));
   const { activePlayer, setActivePlayer } = useContext(AudioPlayerContext);
+  const [liked, setLiked] = useState(false); 
 
   const togglePlayPause = () => {
     if (activePlayer === id) {
@@ -24,12 +27,15 @@ const MusicItem = ({ id, imageSrc, title, artist, audioSrc, handleLike }) => {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
     }
-
-   
-
-
-
   }, [activePlayer, id]);
+
+
+  const handleLikeClick = () => {
+    handleLike();
+    setLiked(!liked);
+  };
+
+
   return (
     <div className="grid-2-small">
       <div className="music__artista">
@@ -53,8 +59,8 @@ const MusicItem = ({ id, imageSrc, title, artist, audioSrc, handleLike }) => {
           icon="mdi:heart"
           className="icon_heart"
           width={35}
-          color="white"
-          onClick={handleLike}
+          color={liked ? 'red' : 'white'}
+          onClick={handleLikeClick}
         />
         <Icon icon="mdi:bookmark-music-outline" width={35} color="white" />
         <Icon icon="mdi:dots-horizontal" width={35} color="white" />

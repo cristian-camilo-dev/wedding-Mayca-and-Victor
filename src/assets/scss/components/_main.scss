@@ -1,13 +1,10 @@
 .scroll {
   width: 100%;
   padding-top: 5rem;
-  padding-bottom: 8rem;
-  
-  background-image: linear-gradient(
-    180deg,
-    rgba(19,165,176,255) 85%,
-    white 100%
-  );
+ 
+  background-color: #82bec7;
+  background-image: linear-gradient(180deg, #82bec7 65%, #ffffff 100%);
+
   
   &__conten{
     text-align: center;

@@ -11,7 +11,7 @@ const CoverPage = () => {
         </p>
         <p className="scroll__description">
           Era de Genoveses - San José, Almería <br />
-          Sábado 16 de septiembre de 2023 | 18.30 AM
+          Sábado 16 de septiembre de 2023 | 18.30 PM
         </p>
         <a
           href="https://planning.wedding/es/website/maycayvictor"
