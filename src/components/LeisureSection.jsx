@@ -1,3 +1,11 @@
+import loma from "../assets/img/loma.jpg";
+import reproductor from "../assets/img/reproductor.png";
+import ceremonia from "../assets/img/ceremonia.jpg";
+import ceremonia1 from "../assets/img/ceremonia1.jpg";
+import hotelJose from "../assets/img/hotelJose.png";
+import hotelPakyta from "../assets/img/hotelp.jpg";
+
+
 const LeisureSection = () => {
   return (
     <div className="Leisure__container">
@@ -5,7 +13,7 @@ const LeisureSection = () => {
       <div>
         <div>
           <img
-            src="/src/assets/img/loma.jpg"
+            src={loma}
             loading="lazy"
             alt="Cortijo la Loma"
             className="img__leisure"
@@ -21,7 +29,7 @@ const LeisureSection = () => {
         </div>
         <div>
           <img
-            src="/src/assets/img/reproductor.png"
+            src={reproductor}
             alt=""
             className="reproductormusica"
           />
@@ -30,7 +38,7 @@ const LeisureSection = () => {
       <div>
         <div>
           <img
-            src="/src/assets/img/ceremonia.jpg"
+            src={ceremonia}
             loading="lazy"
             alt="Ceremonia"
             className="img__leisure"
@@ -45,7 +53,7 @@ const LeisureSection = () => {
         </div>
         <div>
           <img
-            src="/src/assets/img/reproductor.png"
+            src={reproductor}
             alt=""
             className="reproductormusica"
           />
@@ -54,7 +62,7 @@ const LeisureSection = () => {
       <div>
         <div>
           <img
-            src="/src/assets/img/ceremonia1.jpg"
+            src={ceremonia1}
             loading="lazy"
             alt="Celebración"
             className="img__leisure"
@@ -70,7 +78,7 @@ const LeisureSection = () => {
         </div>
         <div>
           <img
-            src="/src/assets/img/reproductor.png"
+            src={reproductor}
             alt=""
             className="reproductormusica"
           />
@@ -79,7 +87,7 @@ const LeisureSection = () => {
       <div>
         <div>
           <img
-            src="/src/assets/img/hotelJose.png"
+            src={hotelJose}
             loading="lazy"
             alt="hotel san jose"
             className="img__leisure"
@@ -94,7 +102,7 @@ const LeisureSection = () => {
         </div>
         <div>
           <img
-            src="/src/assets/img/reproductor.png"
+            src={reproductor}
             alt=""
             className="reproductormusica"
           />
@@ -103,7 +111,7 @@ const LeisureSection = () => {
       <div>
         <div>
           <img
-            src="/src/assets/img/hotelp.jpg"
+            src={hotelPakyta}
             loading="lazy"
             alt="hotel pakyta"
             className="img__leisure"
@@ -118,7 +126,7 @@ const LeisureSection = () => {
         </div>
         <div>
           <img
-            src="/src/assets/img/reproductor.png"
+            src={reproductor}
             alt=""
             className="reproductormusica"
           />

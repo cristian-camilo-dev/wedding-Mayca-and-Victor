@@ -1,4 +1,9 @@
 import Clipboard from "./Clipboard";
+import boda4 from "../assets/img/boda4.jpg";
+import avion from "../assets/img/avion.png";
+import banco from "../assets/img/Banco.png";
+
+
 
 const CardConfirmation = () => {
   return (
@@ -6,7 +11,7 @@ const CardConfirmation = () => {
       <div className="container__cards">
         <div className="card">
           <div className="cover__card">
-            <img src="/src/assets/img/boda4.jpg" alt="" />
+            <img src={boda4} alt="" />
           </div>
           <h2>CONFÍRMANOS TU ASISTENCIA AQUÍ:</h2>
           <a
@@ -25,14 +30,14 @@ const CardConfirmation = () => {
           <h2 className="bank__title">SE VA A LIAR! ATTE. MAYCA & VICTOR</h2>
 
           <img
-            src="/src/assets/img/avion.png"
+            src={avion}
             alt="avion"
             className="avion_img"
           />
         </div>
         <div className="banco">
           <img
-            src="/src/assets/img/Banco.png"
+            src={banco}
             alt="banco"
             className="banco_img"
           />
