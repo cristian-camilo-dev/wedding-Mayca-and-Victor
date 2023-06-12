@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
