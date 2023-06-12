@@ -8,32 +8,41 @@ import confetti from "canvas-confetti";
 
 const Music = () => {
   const [activePlayer, setActivePlayer] = useState(null);
-  // Contador de likes
-  const [likes, setLikes] = useState(0);
+  // Objeto de estados de "me gusta"
+  const [likes, setLikes] = useState({});
+  // Contador de "me gusta"
+  const [likeCount, setLikeCount] = useState(0);
 
-  const handleLike = () => {
-    setLikes(likes + 1);
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 }
-    });
+  const handleLike = (songId) => {
+    // Comprobar si la canción ya ha sido "gustada"
+    if (likes[songId]) {
+      // Si es así, disminuir el contador y actualizar el estado de "me gusta"
+      setLikeCount(likeCount - 1);
+      setLikes({ ...likes, [songId]: false });
+    } else {
+      // Si no, aumentar el contador, lanzar el confeti y actualizar el estado de "me gusta"
+      setLikeCount(likeCount + 1);
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+      setLikes({ ...likes, [songId]: true });
+    }
   };
 
   return (
     <AudioPlayerContext.Provider value={{ activePlayer, setActivePlayer }}>
       <div className="music">
         {songs.map((song) => (
-          <MusicItem key={song.id} {...song} handleLike={handleLike} />
+          <MusicItem key={song.id} {...song} handleLike={() => handleLike(song.id)} />
         ))}
-       <div className="contenedor_likes">
+        <div className="contenedor_likes">
           <img src={like} alt="like" />
           <div className="like">
-              <p>
-              {likes}
-              </p>
-            </div>
-      </div>
+            <p>{likeCount}</p>
+          </div>
+        </div>
       </div>
     </AudioPlayerContext.Provider>
   );

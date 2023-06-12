@@ -8,9 +8,9 @@ const CoverPage = () => {
         <img src={boda1} alt="" className="scroll__img" />
       </div>
       <div className="scroll__conten">
-        <h1 className="scroll__title">Mayca y Víctor</h1>
+        <h1 className="scroll__title">Mayca y Victor</h1>
         <p className="scroll__description">
-          Nos encantaría compartir contigo este día tan especial
+          ¡Nos encantaría compartir contigo este día tan especial! 
         </p>
         <p className="scroll__description">
           Era de Genoveses - San José, Almería <br />

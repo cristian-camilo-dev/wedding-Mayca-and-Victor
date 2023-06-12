@@ -31,11 +31,21 @@
         color: black;
         margin: 0px;
     }
-    p{
+    a{
+        text-decoration: none;
         font-size: 0.6rem;
         font-weight: 500;
         color: #377d80;
+        
        
+    }
+    .leisure__text-link{
+        text-decoration: none;
+        font-size: 0.6rem;
+        font-weight: 500;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 0;
     }
     
   }

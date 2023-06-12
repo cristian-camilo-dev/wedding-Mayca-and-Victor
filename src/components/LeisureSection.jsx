@@ -1,10 +1,9 @@
-import loma from "../assets/img/loma.jpg";
+import loma from "../assets/img/loma2.png";
 import reproductor from "../assets/img/reproductor.png";
-import ceremonia from "../assets/img/ceremonia.jpg";
-import ceremonia1 from "../assets/img/ceremonia1.jpg";
+import ceremonia from "../assets/img/ceremonia3.jpg";
+import ceremonia1 from "../assets/img/comida.jpg";
 import hotelJose from "../assets/img/hotelJose.png";
 import hotelPakyta from "../assets/img/hotelp.jpg";
-
 
 const LeisureSection = () => {
   return (
@@ -22,17 +21,16 @@ const LeisureSection = () => {
         <div className="leisure__text">
           <h3>PREBODA Viernes 15 de Septiembre.</h3>
           <h4>White party a las 19:00h - Cortijo la Loma </h4>
-          <p>
+          <a href="https://www.google.com/maps/place/36%C2%B049'12.6%22N+2%C2%B003'04.5%22W/@36.820179,-2.051257,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.820179!4d-2.051257?entry=ttu" 
+          target="_blank"
+          rel="noreferrer"
+          >
             Cortijo La Loma, 04118 La Isleta Del moro <br />
             <span>Dresscode: blanco, se recomienda no llevar tacón fino</span>
-          </p>
+          </a>
         </div>
         <div>
-          <img
-            src={reproductor}
-            alt=""
-            className="reproductormusica"
-          />
+          <img src={reproductor} alt="" className="reproductormusica" />
         </div>
       </div>
       <div>
@@ -46,17 +44,18 @@ const LeisureSection = () => {
         </div>
         <div className="leisure__text">
           <h3>CEREMONIA Sábado 16 Sep. 18:30h</h3>
-          <h4>Era de los Genoveses,04118 San josé, Almeria </h4>
-          <p>
+          
+          <a href="https://www.google.com/maps/place/36%C2%B045'22.6%22N+2%C2%B007'18.1%22W/@36.756278,-2.12169,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.756278!4d-2.12169?entry=ttu"
+          target="_blank"
+          rel="noreferrer"
+          className="leisure__text-link"
+          >
+            Era de los Genoveses,04118 San josé, Almeria  <br />
             <span>Se recomienda no llevar tacón fino</span>
-          </p>
+          </a>
         </div>
         <div>
-          <img
-            src={reproductor}
-            alt=""
-            className="reproductormusica"
-          />
+          <img src={reproductor} alt="" className="reproductormusica" />
         </div>
       </div>
       <div>
@@ -71,17 +70,17 @@ const LeisureSection = () => {
         <div className="leisure__text">
           <h3>CELEBRACIÓN</h3>
           <h4>Cortijo La Loma </h4>
-          <p>
+          <a href="https://www.google.com/maps/place/36%C2%B049'12.6%22N+2%C2%B003'04.5%22W/@36.820179,-2.051257,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.820179!4d-2.051257?entry=ttu"
+          target="_blank"
+          rel="noreferrer"
+          className="leisure__text-link"
+          >
             Cortijo La Loma, 04118 La Isleta Del moro <br />
             <span>Se recomienda no llevar tacón fino</span>
-          </p>
+          </a>
         </div>
         <div>
-          <img
-            src={reproductor}
-            alt=""
-            className="reproductormusica"
-          />
+          <img src={reproductor} alt="" className="reproductormusica" />
         </div>
       </div>
       <div>
@@ -101,11 +100,7 @@ const LeisureSection = () => {
           </p>
         </div>
         <div>
-          <img
-            src={reproductor}
-            alt=""
-            className="reproductormusica"
-          />
+          <img src={reproductor} alt="" className="reproductormusica" />
         </div>
       </div>
       <div>
@@ -125,11 +120,7 @@ const LeisureSection = () => {
           </p>
         </div>
         <div>
-          <img
-            src={reproductor}
-            alt=""
-            className="reproductormusica"
-          />
+          <img src={reproductor} alt="" className="reproductormusica" />
         </div>
       </div>
     </div>

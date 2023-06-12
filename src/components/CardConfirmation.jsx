@@ -3,8 +3,6 @@ import boda4 from "../assets/img/boda4.jpg";
 import avion from "../assets/img/avion.png";
 import banco from "../assets/img/Banco.png";
 
-
-
 const CardConfirmation = () => {
   return (
     <div>
@@ -28,19 +26,17 @@ const CardConfirmation = () => {
       <div className="container__bank">
         <div>
           <h2 className="bank__title">SE VA A LIAR! ATTE. MAYCA & VICTOR</h2>
-
-          <img
-            src={avion}
-            alt="avion"
-            className="avion_img"
-          />
+          <ul>
+            <li>Sólo adultos</li>
+            <li>
+              Hay autobuses desde San José para todos los desplazamientos y para
+              los vuelos de BCN Y MAD desde el aeropuerto
+            </li>
+          </ul>
+          <img src={avion} alt="avion" className="avion_img" />
         </div>
         <div className="banco">
-          <img
-            src={banco}
-            alt="banco"
-            className="banco_img"
-          />
+          <img src={banco} alt="banco" className="banco_img" />
         </div>
       </div>
       <div className="container__iban">

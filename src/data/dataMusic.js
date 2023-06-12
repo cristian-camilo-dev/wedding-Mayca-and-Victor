@@ -54,7 +54,7 @@ export  const songs = [
     {
       id: 6,
       imageSrc: boda3,
-      title: "Borbuja de amor",
+      title: "Borbujas de amor",
       artist: "Niña Pastori",
       audioSrc: borbujas,
     },
