@@ -25,7 +25,7 @@ const CardConfirmation = () => {
       </div>
       <div className="container__bank">
         <div>
-          <h2 className="bank__title">SE VA A LIAR! ATTE. MAYCA & VICTOR</h2>
+          <h2 className="bank__title">¡SE VA A LIAR! ATTE. MAYCA & VICTOR</h2>
           <ul>
             <li>Sólo adultos</li>
             <li>

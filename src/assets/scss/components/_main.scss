@@ -7,8 +7,17 @@
 
   
   &__conten{
+    position: relative;
     text-align: center;
     padding: 0 1rem;
+    .tilde{
+      position: absolute;
+      top: 18px;
+      right: 87px;
+      font-size: 25px;
+      color:rgb(255, 255, 255);
+      
+    }
   }
   &__img-conten {
     width: 100%;

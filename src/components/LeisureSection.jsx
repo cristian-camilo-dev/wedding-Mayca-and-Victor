@@ -24,10 +24,12 @@ const LeisureSection = () => {
           <a href="https://www.google.com/maps/place/36%C2%B049'12.6%22N+2%C2%B003'04.5%22W/@36.820179,-2.051257,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.820179!4d-2.051257?entry=ttu" 
           target="_blank"
           rel="noreferrer"
+          className="leisure__text-link"
           >
             Cortijo La Loma, 04118 La Isleta Del moro <br />
-            <span>Dresscode: blanco, se recomienda no llevar tacón fino</span>
+           
           </a>
+          <span className="dresscode">Dresscode: blanco, se recomienda no llevar tacón fino</span>
         </div>
         <div>
           <img src={reproductor} alt="" className="reproductormusica" />
@@ -96,7 +98,8 @@ const LeisureSection = () => {
           <h3>HOTEL MC SAN JOSÉ</h3>
           <h4>C. del Faro, 2, 04118 San José, Almería </h4>
           <p>
-            <span>(+34) 678 49 99 72</span>
+          <a className="phone" href="tel:+34678499972">(+34) 678 49 99 72</a>
+
           </p>
         </div>
         <div>
@@ -116,7 +119,7 @@ const LeisureSection = () => {
           <h3>HOTEL DOÑA PAKYTA</h3>
           <h4>C. Correo, 51, 04118 San José, Almería</h4>
           <p>
-            <span>950 61 11 75</span>
+            <a className="phone" href="tel:950611175" >950 61 11 75</a>
           </p>
         </div>
         <div>

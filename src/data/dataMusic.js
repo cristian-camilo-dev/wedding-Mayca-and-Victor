@@ -9,7 +9,7 @@ import miLuz from "../assets/audio/RVFV_Mi_Luz.mp3";
 import tigini from "/src/assets/audio/TIGINI.mp3";
 import nolasco from "/src/assets/audio/PEQUEÑITAS.mp3";
 import demarco from "../assets/audio/Demarco.mp3";
-import borbujas from "/src/assets/audio/Burbujas.mp3";
+import borbujas from "/src/assets/audio/Válgame Dios.mp3";
 
 
 
@@ -54,7 +54,7 @@ export  const songs = [
     {
       id: 6,
       imageSrc: boda3,
-      title: "Borbujas de amor",
+      title: "Válgame Dios",
       artist: "Niña Pastori",
       audioSrc: borbujas,
     },
