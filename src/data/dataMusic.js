@@ -40,7 +40,7 @@ export  const songs = [
     {
       id: 4,
       imageSrc: boda7,
-      title: "las cosas  pequeñitas",
+      title: "Las cosas  pequeñitas",
       artist: "Nolasco",
       audioSrc: nolasco,
     },
