@@ -9,7 +9,7 @@ const CoverPage = () => {
       </div>
       <div className="scroll__conten">
         <h1 className="scroll__title">Mayca y Victor</h1>
-        <span className="tilde">´</span>
+        
         <p className="scroll__description">
           ¡Nos encantaría compartir contigo este día tan especial! 
         </p>
