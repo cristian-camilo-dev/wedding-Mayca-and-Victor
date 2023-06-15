@@ -2,7 +2,7 @@ import { useState } from "react";
 import MusicItem from "./MusicItem";
 import AudioPlayerContext from "../Context/AudioPlayerContext";
 import { songs } from "../data/dataMusic";
-import like from "../assets/img/like.gif";
+import like from "../assets/img/like1.gif";
 import confetti from "canvas-confetti";
 
 
