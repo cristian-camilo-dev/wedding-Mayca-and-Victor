@@ -28,7 +28,8 @@ const LeisureSection = () => {
             rel="noreferrer"
             className="leisure__text-link"
           >
-            Cortijo La Loma, 04118 La Isleta Del moro <br />
+            C.Mediterráneo,115, 04116 Las Negras, Almería
+            <br />
           </a>
           <span className="dresscode">Dresscode: ropa blanca</span>
         </div>
