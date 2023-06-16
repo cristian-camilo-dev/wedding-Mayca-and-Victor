@@ -1,9 +1,10 @@
 import loma from "../assets/img/loma2.png";
 import reproductor from "../assets/img/reproductor.png";
 import ceremonia from "../assets/img/ceremonia3.jpg";
-import ceremonia1 from "../assets/img/comida.jpg";
+
 import hotelJose from "../assets/img/hotelJose.png";
 import hotelPakyta from "../assets/img/hotelp.jpg";
+import luna from "../assets/img/luna.jpg";
 
 const LeisureSection = () => {
   return (
@@ -12,7 +13,7 @@ const LeisureSection = () => {
       <div>
         <div>
           <img
-            src={loma}
+            src={luna}
             loading="lazy"
             alt="Cortijo la Loma"
             className="img__leisure"
@@ -29,7 +30,7 @@ const LeisureSection = () => {
             Cortijo La Loma, 04118 La Isleta Del moro <br />
            
           </a>
-          <span className="dresscode">Dresscode: blanco, se recomienda no llevar tacón fino</span>
+          <span className="dresscode">Dresscode: ropa blanca</span>
         </div>
         <div>
           <img src={reproductor} alt="" className="reproductormusica" />
@@ -64,7 +65,7 @@ const LeisureSection = () => {
       <div>
         <div>
           <img
-            src={ceremonia1}
+            src={loma}
             loading="lazy"
             alt="Celebración"
             className="img__leisure"

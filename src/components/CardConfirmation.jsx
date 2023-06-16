@@ -1,7 +1,7 @@
 import Clipboard from "./Clipboard";
 import boda4 from "../assets/img/boda4.jpg";
 import avion from "../assets/img/avion.png";
-import banco from "../assets/img/Banco.png";
+
 
 const CardConfirmation = () => {
   return (
@@ -35,9 +35,7 @@ const CardConfirmation = () => {
           </ul>
           <img src={avion} alt="avion" className="avion_img" />
         </div>
-        <div className="banco">
-          <img src={banco} alt="banco" className="banco_img" />
-        </div>
+        
       </div>
       <div className="container__iban">
         <Clipboard />
